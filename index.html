@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioskop Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #333;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .movie-list {
+            list-style: none;
+            padding: 0;
+        }
+        .movie-item {
+            background: #444;
+            margin-bottom: 18px;
+            padding: 18px;
+            border-radius: 8px;
+        }
+        .movie-title {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+        .showtimes {
+            color: #ffd700;
+        }
+        .buy-btn {
+            background: #ffd700;
+            color: #222;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .buy-btn:hover {
+            background: #ffb300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIOSKOP XXI</h1>
+        <ul class="movie-list">
+            <li class="movie-item">
+                <div class="movie-title">Spider-Man: No Way Home</div>
+                <div>Genre: Action, Adventure</div>
+                <div class="showtimes">Jadwal: 12:00 | 15:00 | 18:00</div>
+                <button class="buy-btn">Beli Tiket</button>
+            </li>
+            <li class="movie-item">
+                <div class="movie-title">Elemental</div>
+                <div>Genre: Animation, Family</div>
+                <div class="showtimes">Jadwal: 11:00 | 14:00 | 17:00</div>
+                <button class="buy-btn">Beli Tiket</button>
+            </li>
+            <li class="movie-item">
+                <div class="movie-title">Fast & Furious 10</div>
+                <div>Genre: Action, Thriller</div>
+                <div class="showtimes">Jadwal: 13:00 | 16:00 | 19:00</div>
+                <button class="buy-btn">Beli Tiket</button>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
