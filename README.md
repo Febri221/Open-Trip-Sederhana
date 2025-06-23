@@ -1,2 +1,2 @@
-# Open-Trip-Sederhana
-Website open trip sederhana
+# Tampilan Bioskop Sederhana
+Website bioskop sederhaana
