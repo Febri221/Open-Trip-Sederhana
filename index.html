@@ -3,79 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bioskop Sederhana</title>
+    <title>Open Trip Sederhana</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #222;
-            color: #fff;
+            background: #e3f2fd;
+            color: #222;
             margin: 0;
             padding: 0;
         }
+        nav {
+            background: #1976d2;
+            padding: 16px 0;
+            margin-bottom: 30px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #ffd600;
+        }
         .container {
-            max-width: 700px;
+            max-width: 800px;
             margin: 40px auto;
-            background: #333;
+            background: #fff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 16px rgba(25, 118, 210, 0.1);
         }
         h1 {
             text-align: center;
+            color: #1976d2;
             margin-bottom: 30px;
         }
-        .movie-list {
+        .trip-list {
             list-style: none;
             padding: 0;
         }
-        .movie-item {
-            background: #444;
+        .trip-item {
+            background: #e3f2fd;
             margin-bottom: 18px;
             padding: 18px;
             border-radius: 8px;
+            border-left: 5px solid #1976d2;
         }
-        .movie-title {
-            font-size: 1.3em;
+        .trip-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .trip-date {
+            color: #1976d2;
             margin-bottom: 8px;
         }
-        .showtimes {
-            color: #ffd700;
-        }
-        .buy-btn {
-            background: #ffd700;
-            color: #222;
+        .trip-btn {
+            background: #1976d2;
+            color: #fff;
             border: none;
             padding: 8px 18px;
             border-radius: 5px;
             cursor: pointer;
             font-weight: bold;
         }
-        .buy-btn:hover {
-            background: #ffb300;
+        .trip-btn:hover {
+            background: #1565c0;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Destinasi</a></li>
+            <li><a href="#">Open Trip</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <h1>BIOSKOP XXI</h1>
-        <ul class="movie-list">
-            <li class="movie-item">
-                <div class="movie-title">Spider-Man: No Way Home</div>
-                <div>Genre: Action, Adventure</div>
-                <div class="showtimes">Jadwal: 12:00 | 15:00 | 18:00</div>
-                <button class="buy-btn">Beli Tiket</button>
+        <h1>OPEN TRIP INDONESIA</h1>
+        <ul class="trip-list">
+            <li class="trip-item">
+                <div class="trip-title">Open Trip Pulau Komodo</div>
+                <div class="trip-date">Tanggal: 10 - 12 Juli 2025</div>
+                <div>Harga: Rp2.500.000/orang</div>
+                <button class="trip-btn">Daftar Sekarang</button>
             </li>
-            <li class="movie-item">
-                <div class="movie-title">Elemental</div>
-                <div>Genre: Animation, Family</div>
-                <div class="showtimes">Jadwal: 11:00 | 14:00 | 17:00</div>
-                <button class="buy-btn">Beli Tiket</button>
+            <li class="trip-item">
+                <div class="trip-title">Open Trip Raja Ampat</div>
+                <div class="trip-date">Tanggal: 20 - 24 Juli 2025</div>
+                <div>Harga: Rp4.000.000/orang</div>
+                <button class="trip-btn">Daftar Sekarang</button>
             </li>
-            <li class="movie-item">
-                <div class="movie-title">Fast & Furious 10</div>
-                <div>Genre: Action, Thriller</div>
-                <div class="showtimes">Jadwal: 13:00 | 16:00 | 19:00</div>
-                <button class="buy-btn">Beli Tiket</button>
+            <li class="trip-item">
+                <div class="trip-title">Open Trip Bromo Sunrise</div>
+                <div class="trip-date">Tanggal: 5 - 6 Agustus 2025</div>
+                <div>Harga: Rp850.000/orang</div>
+                <button class="trip-btn">Daftar Sekarang</button>
             </li>
         </ul>
     </div>
